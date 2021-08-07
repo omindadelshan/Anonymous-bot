@@ -34,7 +34,8 @@ async def startmessage(event):
       await client.send_message(event.chat_id,
                                 message=START_TEXT,
                                 buttons=[[Button.url("🔥 Developer 🔥","https://t.me/omindas"),
-                                         Button.url("🤖Support Channel🤖","https://t.me/sdprojectupdates")]])                                                                
+                                         Button.url("🤖Support Channel🤖","https://t.me/sdprojectupdates"),
+                                         Button.url("👨‍💻 Help 👨‍💻","https://t.me/omindas")]])                                                                
     if event.message.media:
       await client.send_message(event.chat_id,file=event.message.media)
     else:
